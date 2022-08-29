@@ -119,14 +119,11 @@
       <h2 class="section-title">Contact</h2>
 
       <div class="contact__container bd-grid">
-         <form action="https://api.staticforms.xyz/submit" class="contact__form" method="post">
+          <form action="/contact" class="contact__form" method="post">
           <input type="text" name="name" placeholder="Name" class="contact__input" required>
-          <input type="text" name="email" placeholder="Email" class="contact__input" required>
+          <input type="email" name="email" placeholder="Email" class="contact__input" required>
           <textarea name="message" id="" cols="0" rows="10" class="contact__input" required></textarea>
-           <input type="text" name="honeypot" style="display:none">
-        <input type="hidden" name="accessKey" value="020c1396-8508-40e5-88b7-e36286618b6c">
-           <input type="hidden" name="replyTo" value="rorazbi@gmail.com">
-          <button class="contact__button button" type="submit" name="submit">Send</button>
+          <button class="contact__button button" type="submit" value="submit" name="submit">Send</button>
         </form>
       </div>
     </section>
